@@ -82,11 +82,11 @@
 <meta name="description" content="arch中文arch维基">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Arch Linux 安装手册">
-<meta property="og:url" content="http://zpress.top/2017/10/20/archlinux/index.html">
+<meta property="og:url" content="http://nickwilde6.github.com/2017/10/20/archlinux/index.html">
 <meta property="og:site_name" content="ZZRun">
 <meta property="og:description" content="arch中文arch维基">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-21T04:47:58.617Z">
+<meta property="og:updated_time" content="2017-10-21T08:06:41.225Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Arch Linux 安装手册">
 <meta name="twitter:description" content="arch中文arch维基">
@@ -119,7 +119,7 @@
 
 
 
-  <link rel="canonical" href="http://zpress.top/2017/10/20/archlinux/"/>
+  <link rel="canonical" href="http://nickwilde6.github.com/2017/10/20/archlinux/"/>
 
 
 
@@ -262,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zpress.top/2017/10/20/archlinux/">
+    <link itemprop="mainEntityOfPage" href="http://nickwilde6.github.com/2017/10/20/archlinux/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zz">
@@ -351,7 +351,7 @@
       
 
       
-        <p><a href="http://bbs.archlinuxcn.org/" target="_blank" rel="external">arch中文</a><br><a href="https://wiki.archlinux.org/" target="_blank" rel="external">arch维基</a><br><a id="more"></a><br>```zsh<br>$ rfkill list<br>$ vim /etc/wpa_supplicant/wpa_supplicant.conf<br>    network={<br>      ssid=””<br>      psk=””<br>      priority=1<br>    }<br>$ ifconfig<br>$ wpa_supplicant - B -i wlp2s0 -C /etc/wpa_supplicant/wpa_supplicant.conf<br>$ dhcpcd<br>$ ping apple.com<br>$ timedatectl set-ntp true<br>$ vim /etc/pacman.d/mirrorlist<br>$ pacman -Syy<br>$ grep -A 1 ‘China’ /etc/pacman.d/mirrorlist<br>$ sed -i ‘/China/!{n;/Server/s/^/#/};t;n’ /etc/pacman.d/mirrorlist<br>$ lsblk<br>$ sudo cfdisk /dev/sda<br>$ mkfs.fat -F32 /dev/sda1<br>$ mkfs.ext4 /dev/sda2<br>$ mount /dev/sda2 /mnt<br>$ mkdir -p /mnt/boot/EFI<br>$ mount /dev/sda1 /mnt/boot/EFI<br>$ pacstrap /mnt base<br>$ genfstab -U /mnt &gt;&gt; /mnt/etc/fstab<br>$ cat /mnt/etc/fstab<br>$ arch-chroot /mnt<br>$ nano /etc/locale.gen<br>$ locale-gen<br>$ ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime<br>$ hwclock –systohc<br>$ echo zzrun &gt; /etc/hostname<br>$ nano -w /etc/hosts<br>    172.0.1.1    zzrun.localdomain    zzrun<br>$ pacman -S iw wpa_supplicant dialog rfkill<br>$ pacman dhcpcd elinks zsh vim<br>$ passwd<br>$ BIOS<br>    pacman -S grub os-prober<br>    grub-install –target=i386-pc /dev/sda<br>    grub-mkconfig -o /boot/grub/grub.cfg<br>  UEFI<br>    pacman -S dosfstools grub efibootmgr<br>    grub-install –target=x86_64-efi –efi-directory=/mnt/boot/ –bootloader-id=grub<br>    grub-mkconfig -o /boot/grub/grub.cfg<br>$ exit<br>$ umount -R /mnt<br>$ reboot<br>$ useradd -m -g users -s /usr/bin/zsh zz<br>$ passwd zz<br>$ lspci | grep VGA<br>$ pacman -S xf86-video-intel<br>留坑</p>
+        <p><a href="http://bbs.archlinuxcn.org/" target="_blank" rel="external">arch中文</a><br><a href="https://wiki.archlinux.org/" target="_blank" rel="external">arch维基</a><br><a id="more"></a><br>```zsh<br>$ rfkill list<br>$ vim /etc/wpa_supplicant/wpa_supplicant.conf<br>    network={<br>      ssid=””<br>      psk=””<br>      priority=1<br>    }<br>$ ifconfig<br>$ wpa_supplicant - B -i wlp2s0 -C /etc/wpa_supplicant/wpa_supplicant.conf<br>$ dhcpcd<br>$ ping apple.com<br>$ timedatectl set-ntp true<br>$ vim /etc/pacman.d/mirrorlist<br>$ pacman -Syy<br>$ grep -A 1 ‘China’ /etc/pacman.d/mirrorlist<br>$ sed -i ‘/China/!{n;/Server/s/^/#/};t;n’ /etc/pacman.d/mirrorlist<br>$ lsblk<br>$ sudo cfdisk /dev/sda<br>$ mkfs.fat -F32 /dev/sda1<br>$ mkfs.ext4 /dev/sda2<br>$ mount /dev/sda2 /mnt<br>$ mkdir -p /mnt/boot/EFI<br>$ mount /dev/sda1 /mnt/boot/EFI<br>$ pacstrap /mnt base<br>$ genfstab -U /mnt &gt;&gt; /mnt/etc/fstab<br>$ cat /mnt/etc/fstab<br>$ arch-chroot /mnt<br>$ nano /etc/locale.gen<br>$ locale-gen<br>$ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime<br>$ hwclock –systohc<br>$ echo zzrun &gt; /etc/hostname<br>$ nano -w /etc/hosts<br>    172.0.1.1    zzrun.localdomain    zzrun<br>$ pacman -S iw wpa_supplicant dialog rfkill<br>$ pacman dhcpcd elinks zsh vim<br>$ passwd<br>$ BIOS<br>    pacman -S grub os-prober<br>    grub-install –target=i386-pc /dev/sda<br>    grub-mkconfig -o /boot/grub/grub.cfg<br>  UEFI<br>    pacman -S dosfstools grub efibootmgr<br>    grub-install –target=x86_64-efi –efi-directory=/boot/EFI –bootloader-id=grub<br>    grub-mkconfig -o /boot/grub/grub.cfg<br>$ exit<br>$ umount -R /mnt<br>$ reboot<br>$ useradd -m -g users -s /usr/bin/zsh zz<br>$ passwd zz<br>$ lspci | grep VGA<br>$ pacman -S xf86-video-intel<br>留坑</p>
 
       
     </div>
