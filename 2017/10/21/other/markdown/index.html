@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Markdown">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MarkDown语法练习">
+<meta property="og:url" content="http://zpress.top/2017/10/21/other/markdown/index.html">
+<meta property="og:site_name" content="ZZRun">
+<meta property="og:description" content="Markdown">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://zpress.top/images/1.png">
+<meta property="og:updated_time" content="2017-11-05T10:29:38.771Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MarkDown语法练习">
+<meta name="twitter:description" content="Markdown">
+<meta name="twitter:image" content="http://zpress.top/images/1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://zpress.top/2017/10/21/other/markdown/"/>
+
+
+
+
+
+  <title>MarkDown语法练习 | ZZRun</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ZZRun</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zpress.top/2017/10/21/other/markdown/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZZRun">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">MarkDown语法练习</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-21T20:09:00+08:00">
+                2017-10-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Markdown<br><a id="more"></a></p>
+<h1 id="斜体与粗体"><a href="#斜体与粗体" class="headerlink" title="斜体与粗体"></a>斜体与粗体</h1><p><em>斜体</em> 或 <em>斜体</em><br><strong>粗体</strong><br><strong><em>加粗斜体</em></strong><br><del>删除线</del><br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">*斜体*或_斜体_</div><div class="line">**粗体**</div><div class="line">***加粗斜体***</div><div class="line">~~删除线~~</div></pre></td></tr></table></figure></p>
+<h1 id="分级标题"><a href="#分级标题" class="headerlink" title="分级标题"></a>分级标题</h1><h2 id="第一种写法："><a href="#第一种写法：" class="headerlink" title="第一种写法："></a>第一种写法：</h2><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">这是一个一级标题</div><div class="line">================</div><div class="line"></div><div class="line">这是一个二级标题</div><div class="line"> ----------------</div></pre></td></tr></table></figure>
+<h2 id="第二种写法："><a href="#第二种写法：" class="headerlink" title="第二种写法："></a>第二种写法：</h2><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 一级标题</span></div><div class="line"><span class="comment">## 二级标题</span></div><div class="line"><span class="comment">### 三级标题</span></div><div class="line"><span class="comment">#### 四级标题</span></div><div class="line"><span class="comment">##### 五级标题</span></div><div class="line"><span class="comment">###### 六级标题</span></div></pre></td></tr></table></figure>
+<h1 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h1><h2 id="3-1-行内式"><a href="#3-1-行内式" class="headerlink" title="3.1 行内式"></a>3.1 行内式</h2><p><a href="http://zzrun.top" target="_blank" rel="external">ZZRun</a><br><a href="http://zzrun.top" title="zzrun" target="_blank" rel="external">zzrun</a></p>
+<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[ZZRun](http://zzrun.top)</div><div class="line">[zzrun](http://zzrun.top <span class="string">"zzrun"</span>)</div></pre></td></tr></table></figure>
+<h2 id="参考式"><a href="#参考式" class="headerlink" title="参考式"></a>参考式</h2><p><a href="http://zzrun.top" target="_blank" rel="external">ZZRun</a>、<a href="http://apple.com" title="Apple" target="_blank" rel="external">apple</a></p>
+<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[ZZRun][1]、[apple][2]</div><div class="line">[1]: http://zzrun.top</div><div class="line">[2]: http://apple.com <span class="string">"Apple"</span></div></pre></td></tr></table></figure>
+<h2 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h2><p><a href="http://zzrun.top" target="_blank" rel="external">http://zzrun.top</a><br><a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#51;&#51;&#x39;&#x37;&#x35;&#52;&#x32;&#x33;&#x36;&#55;&#64;&#113;&#113;&#46;&#99;&#x6f;&#x6d;">&#51;&#51;&#x39;&#x37;&#x35;&#52;&#x32;&#x33;&#x36;&#55;&#64;&#113;&#113;&#46;&#99;&#x6f;&#x6d;</a><br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;http://zzrun.top&gt;</div><div class="line">&lt;3397542367@qq.com&gt;</div></pre></td></tr></table></figure></p>
+<h1 id="锚点"><a href="#锚点" class="headerlink" title="锚点"></a>锚点</h1><p>暂不可用</p>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><ul>
+<li>无序列表1</li>
+</ul>
+<ul>
+<li>无序列表2</li>
+</ul>
+<ul>
+<li>无序列表3<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">* 无序列表1</div><div class="line">+ 无序列表2</div><div class="line">- 无序列表3</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><ol>
+<li>有序列表1</li>
+<li>有序列表2</li>
+<li>有序列表3<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1. 有序列表1</div><div class="line">2. 有序列表2</div><div class="line">3. 有序列表3</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="定义型列表"><a href="#定义型列表" class="headerlink" title="定义型列表"></a>定义型列表</h2><p>暂不可用<br>Markdown<br>代码块<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Markdown</div><div class="line">: 轻量级文本标记语言（冒号接四个空格）</div><div class="line">代码块</div><div class="line">: d</div><div class="line">		代码块（左侧八个空格）</div></pre></td></tr></table></figure></p>
+<h2 id="列表缩进"><a href="#列表缩进" class="headerlink" title="列表缩进"></a>列表缩进</h2><ul>
+<li>轻轻的我走了，正如我轻轻的来；我轻轻的招手，作别西天的云彩。那河畔的金柳，是夕阳中的新娘；波光里的艳影，在我的心头荡漾。</li>
+<li>软泥上的青荇，油油的在水底招摇；在康河的柔波里，我甘心做一条水草！<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">*  轻轻的我走了，正如我轻轻的来；我轻轻的招手，作别西天的云彩。那河畔的金柳，是夕阳中的新娘；波光里的艳影，在我的心头荡漾。</div><div class="line">*  软泥上的青荇，油油的在水底招摇；在康河的柔波里，我甘心做一条水草！</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="包含引用的列表"><a href="#包含引用的列表" class="headerlink" title="包含引用的列表"></a>包含引用的列表</h2><ul>
+<li>阅读的方法：<blockquote>
+<p>开灯<br>看书</p>
+<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">*		阅读的方法：</div><div class="line">		&gt;开灯</div><div class="line">		&gt;看书</div></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ul>
+<h2 id="包含代码区块的引用"><a href="#包含代码区块的引用" class="headerlink" title="包含代码区块的引用"></a>包含代码区块的引用</h2><pre><code>代码在这（8个空格或2个制表符）
+</code></pre><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">代码在这（8个空格或2个制表符）</div></pre></td></tr></table></figure>
+<h2 id="特殊情况"><a href="#特殊情况" class="headerlink" title="特殊情况"></a>特殊情况</h2><ol>
+<li>我想和这个世界谈谈<br>1988. 我想和这个世界谈谈<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1988. 我想和这个世界谈谈</div><div class="line">1988\. 我想和这个世界谈谈</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><blockquote>
+<p>引用1<br>引用2<br>引用3</p>
+</blockquote>
+<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt; 引用1</div><div class="line">&gt; 引用2</div><div class="line">&gt; 引用3</div></pre></td></tr></table></figure>
+<h2 id="引用的多层嵌套"><a href="#引用的多层嵌套" class="headerlink" title="引用的多层嵌套"></a>引用的多层嵌套</h2><blockquote>
+<blockquote>
+<blockquote>
+<p>问世间情为何物？</p>
+</blockquote>
+<p>自己看教材！</p>
+</blockquote>
+<p>(<em>@ο@</em>) 哇～<br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; 问世间情为何物？</div><div class="line"></div><div class="line">&gt;&gt; 自己看教材！</div><div class="line"></div><div class="line">&gt; (*@ο@*) 哇～</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h1 id="LaTex公式"><a href="#LaTex公式" class="headerlink" title="LaTex公式"></a>LaTex公式</h1><p>参考<a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="external">https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference</a><br><a href="http://docs.mathjax.org/en/latest/start.html" target="_blank" rel="external">http://docs.mathjax.org/en/latest/start.html</a><br>$-b \pm \sqrt{b^2 - 4ac} \over 2a$</p>
+<h1 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h1><p>参考<a href="http://flowchart.js.org/" target="_blank" rel="external">http://flowchart.js.org/</a></p>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table>
+<thead>
+<tr>
+<th>学号</th>
+<th>姓名</th>
+<th style="text-align:right">分数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a</td>
+<td>男</td>
+<td style="text-align:right">75</td>
+</tr>
+<tr>
+<td>小芳</td>
+<td>女</td>
+<td style="text-align:right">21</td>
+</tr>
+<tr>
+<td>zz</td>
+<td>男</td>
+<td style="text-align:right">28</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">|学号|姓名|分数|</div><div class="line">|-|-|-:|</div><div class="line">|a|男|75|</div><div class="line">|小芳|女|21|</div><div class="line">|zz|男|28|</div></pre></td></tr></table></figure>
+<p>图片：<img src="/images/1.png" alt="a" title="智障z"></p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">首行缩进: &amp;emsp; &amp;ensp;</div><div class="line">4 &lt; 5: 4 &amp;lt; 5</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/21/wenxue/banzhangzhi/" rel="next" title="半张纸">
+                <i class="fa fa-chevron-left"></i> 半张纸
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/23/wenxue/renjiancihua/" rel="prev" title="人间词话">
+                人间词话 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.gif"
+                alt="zz" />
+            
+              <p class="site-author-name" itemprop="name">zz</p>
+              <p class="site-description motion-element" itemprop="description">～o(>﹏<)o</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https:github.com/nickwilde6" target="_blank" title="github">
+                    
+                      <i class="fa fa-fw fa-globe"></i>github</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://douban.com" target="_blank" title="豆瓣">
+                    
+                      <i class="fa fa-fw fa-globe"></i>豆瓣</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://blog.csdn.net/xiangkaijie" title="开杰" target="_blank">开杰</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://blog.csdn.net/zw1996" title="zw1996" target="_blank">zw1996</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#斜体与粗体"><span class="nav-number">1.</span> <span class="nav-text">斜体与粗体</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分级标题"><span class="nav-number">2.</span> <span class="nav-text">分级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一种写法："><span class="nav-number">2.1.</span> <span class="nav-text">第一种写法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二种写法："><span class="nav-number">2.2.</span> <span class="nav-text">第二种写法：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#超链接"><span class="nav-number">3.</span> <span class="nav-text">超链接</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-行内式"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 行内式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考式"><span class="nav-number">3.2.</span> <span class="nav-text">参考式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自动链接"><span class="nav-number">3.3.</span> <span class="nav-text">自动链接</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#锚点"><span class="nav-number">4.</span> <span class="nav-text">锚点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#列表"><span class="nav-number">5.</span> <span class="nav-text">列表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#无序列表"><span class="nav-number">5.1.</span> <span class="nav-text">无序列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有序列表"><span class="nav-number">5.2.</span> <span class="nav-text">有序列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定义型列表"><span class="nav-number">5.3.</span> <span class="nav-text">定义型列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表缩进"><span class="nav-number">5.4.</span> <span class="nav-text">列表缩进</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#包含引用的列表"><span class="nav-number">5.5.</span> <span class="nav-text">包含引用的列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#包含代码区块的引用"><span class="nav-number">5.6.</span> <span class="nav-text">包含代码区块的引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊情况"><span class="nav-number">5.7.</span> <span class="nav-text">特殊情况</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#引用"><span class="nav-number">6.</span> <span class="nav-text">引用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#引用的多层嵌套"><span class="nav-number">6.1.</span> <span class="nav-text">引用的多层嵌套</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#LaTex公式"><span class="nav-number">7.</span> <span class="nav-text">LaTex公式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#流程图"><span class="nav-number">8.</span> <span class="nav-text">流程图</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#表格"><span class="nav-number">9.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他"><span class="nav-number">10.</span> <span class="nav-text">其他</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-linux fa-apple"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zz</span>
+
+<a href="http://www.miitbeian.gov.cn/">湘ICP备17006075号</a> 
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="theme-info"></div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
