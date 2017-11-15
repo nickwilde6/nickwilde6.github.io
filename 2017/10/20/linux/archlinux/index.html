@@ -7,7 +7,7 @@
 
 <html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="arch中文">
+<meta name="description" content="Arch Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Arch Linux 安装手册">
-<meta property="og:url" content="http://zpress.top/2017/10/20/linux/archlinux/index.html">
+<meta property="og:url" content="http://zzrun.top/2017/10/20/linux/archlinux/index.html">
 <meta property="og:site_name" content="ZZRun">
-<meta property="og:description" content="arch中文">
+<meta property="og:description" content="Arch Linux">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-31T11:17:37.847Z">
+<meta property="og:updated_time" content="2017-11-09T09:21:42.887Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Arch Linux 安装手册">
-<meta name="twitter:description" content="arch中文">
+<meta name="twitter:description" content="Arch Linux">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://zpress.top/2017/10/20/linux/archlinux/"/>
+  <link rel="canonical" href="http://zzrun.top/2017/10/20/linux/archlinux/"/>
 
 
 
 
 
-  <title>Arch Linux 安装手册 | ZZRun</title>
+  <title>Arch Linux 安装手册 | ZZRun</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -144,7 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -186,26 +186,6 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
           </a>
         </li>
       
@@ -262,7 +242,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zpress.top/2017/10/20/linux/archlinux/">
+    <link itemprop="mainEntityOfPage" href="http://zzrun.top/2017/10/20/linux/archlinux/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zz">
@@ -351,7 +331,7 @@
       
 
       
-        <p><a href="http://bbs.archlinuxcn.org/" target="_blank" rel="external">arch中文</a><br><a id="more"></a><br><a href="https://wiki.archlinux.org/" target="_blank" rel="external">arch维基</a><br>```zsh<br>$ rfkill list<br>$ vim /etc/wpa_supplicant/wpa_supplicant.conf<br>    network={<br>      ssid=””<br>      psk=””<br>      priority=1<br>    }<br>$ ifconfig<br>$ wpa_supplicant - B -i wlp2s0 -C /etc/wpa_supplicant/wpa_supplicant.conf<br>$ dhcpcd<br>$ ping apple.com<br>$ timedatectl set-ntp true<br>$ vim /etc/pacman.d/mirrorlist<br>$ pacman -Syy<br>$ grep -A 1 ‘China’ /etc/pacman.d/mirrorlist<br>$ sed -i ‘/China/!{n;/Server/s/^/#/};t;n’ /etc/pacman.d/mirrorlist<br>$ lsblk<br>$ sudo cfdisk /dev/sda<br>$ mkfs.fat -F32 /dev/sda1<br>$ mkfs.ext4 /dev/sda2<br>$ mount /dev/sda2 /mnt<br>$ mkdir -p /mnt/boot/EFI<br>$ mount /dev/sda1 /mnt/boot/EFI<br>$ pacstrap /mnt base<br>$ genfstab -U /mnt &gt;&gt; /mnt/etc/fstab<br>$ cat /mnt/etc/fstab<br>$ arch-chroot /mnt<br>$ nano /etc/locale.gen<br>$ locale-gen<br>$ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime<br>$ hwclock –systohc<br>$ echo zzrun &gt; /etc/hostname<br>$ nano -w /etc/hosts<br>    172.0.1.1    zzrun.localdomain    zzrun<br>$ pacman -S iw wpa_supplicant dialog rfkill<br>$ pacman dhcpcd elinks zsh vim<br>$ passwd<br>$ BIOS<br>    pacman -S grub os-prober<br>    grub-install –target=i386-pc /dev/sda<br>    grub-mkconfig -o /boot/grub/grub.cfg<br>  UEFI<br>    pacman -S dosfstools grub efibootmgr<br>    grub-install –target=x86_64-efi –efi-directory=/boot/EFI –bootloader-id=grub<br>    grub-mkconfig -o /boot/grub/grub.cfg<br>$ exit<br>$ umount -R /mnt<br>$ reboot<br>$ useradd -m -g users -s /usr/bin/zsh zz<br>$ passwd zz<br>$ lspci | grep VGA<br>$ pacman -S xf86-video-intel<br>留坑</p>
+        <font color="pink">Arch Linux</font><br><a id="more"></a><br><figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div></pre></td><td class="code"><pre><div class="line">$ rfkill list</div><div class="line">$ rfkill unblock wifi	<span class="comment">#打开WiFi开关</span></div><div class="line">$ vim /etc/wpa_supplicant/wpa_supplicant.conf</div><div class="line">	network=&#123;</div><div class="line">	  ssid=<span class="string">""</span>	<span class="comment">#wifi名称</span></div><div class="line">	  psk=<span class="string">""</span>	<span class="comment">#wifi密码</span></div><div class="line">	  priority=1	<span class="comment">#优先级设为1</span></div><div class="line">	&#125;</div><div class="line">$ ifconfig</div><div class="line">$ wpa_supplicant - B -i wlp2s0 -C /etc/wpa_supplicant/wpa_supplicant.conf</div><div class="line">$ dhcpcd		<span class="comment">#自动配置ip</span></div><div class="line">$ ping apple.com</div><div class="line">$ timedatectl <span class="built_in">set</span>-ntp <span class="literal">true</span></div><div class="line">$ vim /etc/pacman.d/mirrorlist</div><div class="line">$ pacman -Syy</div><div class="line">$ grep -A 1 <span class="string">'China'</span> /etc/pacman.d/mirrorlist</div><div class="line">$ sed -i <span class="string">'/China/!&#123;n;/Server/s/^/#/&#125;;t;n'</span> /etc/pacman.d/mirrorlist</div><div class="line">$ lsblk</div><div class="line">$ sudo cfdisk /dev/sda</div><div class="line">$ mkfs.fat -F32 /dev/sda1</div><div class="line">$ mkfs.ext4 /dev/sda2</div><div class="line">$ mount /dev/sda2 /mnt</div><div class="line">$ mkdir -p /mnt/boot/EFI</div><div class="line">$ mount /dev/sda1 /mnt/boot/EFI</div><div class="line">$ pacstrap /mnt base</div><div class="line">$ genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</div><div class="line">$ cat /mnt/etc/fstab</div><div class="line">$ arch-chroot /mnt</div><div class="line">$ nano /etc/locale.gen</div><div class="line">$ locale-gen</div><div class="line">$ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</div><div class="line">$ hwclock --systohc</div><div class="line">$ <span class="built_in">echo</span> zzrun &gt; /etc/hostname</div><div class="line">$ nano -w /etc/hosts</div><div class="line">	172.0.1.1	zzrun.localdomain	zzrun</div><div class="line">$ pacman -S iw wpa_supplicant dialog rfkill</div><div class="line">$ pacman dhcpcd elinks zsh vim lynx pkill mtr</div><div class="line">$ passwd</div><div class="line">$ BIOS 引导</div><div class="line">	pacman -S grub os-prober</div><div class="line">	grub-install --target=i386-pc /dev/sda</div><div class="line">	grub-mkconfig -o /boot/grub/grub.cfg</div><div class="line">  UEFI 引导</div><div class="line">	pacman -S dosfstools grub efibootmgr</div><div class="line">	grub-install --target=x86_64-efi --efi-directory=/boot/EFI --bootloader-id=grub</div><div class="line">	grub-mkconfig -o /boot/grub/grub.cfg</div><div class="line">$ <span class="built_in">exit</span></div><div class="line">$ umount -R /mnt</div><div class="line">$ reboot</div><div class="line">$ useradd -m -g users -s /usr/bin/zsh zz</div><div class="line">$ passwd zz</div><div class="line">$ lspci | grep VGA</div><div class="line">$ pacman -S xf86-video-intel</div></pre></td></tr></table></figure><br><br><font color="skyblue">参考资料：<br><a href="https://wiki.archlinux.org/index.php/Main_page" target="_blank" rel="external">https://wiki.archlinux.org/index.php/Main_page</a><br><a href="http://bbs.archlinuxcn.org" target="_blank" rel="external">http://bbs.archlinuxcn.org</a><br>留坑</font>
 
       
     </div>
@@ -376,8 +356,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/19/linux/linux/" rel="next" title="Linux 常用工具">
-                <i class="fa fa-chevron-left"></i> Linux 常用工具
+              <a href="/2017/10/19/wenxue/kafuka/" rel="next" title="弗兰茨·卡夫卡">
+                <i class="fa fa-chevron-left"></i> 弗兰茨·卡夫卡
               </a>
             
           </div>
@@ -450,7 +430,7 @@
                 alt="zz" />
             
               <p class="site-author-name" itemprop="name">zz</p>
-              <p class="site-description motion-element" itemprop="description">～o(>﹏<)o</p>
+              <p class="site-description motion-element" itemprop="description">昨夜西风凋碧树，独上高楼，<br>望尽天涯路～o(>﹏<)o</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -460,7 +440,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -471,7 +451,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -482,7 +462,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -681,7 +661,24 @@
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 
