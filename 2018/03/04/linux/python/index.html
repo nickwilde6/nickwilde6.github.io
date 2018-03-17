@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Python 优点    开发效率高，强大的库Python 缺点    运行速度慢，代码不能加密 用 exit() 或 ctrl+d 退出 python 交互模式 在 xx.py 首行加上 #!/usr/bin/env python3 并加上执行权限可直接运行 xx.py 文件 python 允许用 r’’ 表示 ‘’ 内部的字符串默认不转义，允许用 ‘’’…’’’ 的格式表示多行内容">
+<meta name="description" content="Python 优点    开发效率高，强大的库Python 缺点    运行速度慢，代码不能加密 用 exit() 或 ctrl+d 退出 python 交互模式 在 xx.py 首行加上 #!/usr/bin/env python3 并加上执行权限可直接运行 xx.py 文件python 允许用 r’’ 表示 ‘’ 内部的字符串默认不转义，允许用 ‘’’…’’’ 的格式表示多行内容 print">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python3 学习">
 <meta property="og:url" content="http://zzrun.top/2018/03/04/linux/python/index.html">
 <meta property="og:site_name" content="ZZRun">
-<meta property="og:description" content="Python 优点    开发效率高，强大的库Python 缺点    运行速度慢，代码不能加密 用 exit() 或 ctrl+d 退出 python 交互模式 在 xx.py 首行加上 #!/usr/bin/env python3 并加上执行权限可直接运行 xx.py 文件 python 允许用 r’’ 表示 ‘’ 内部的字符串默认不转义，允许用 ‘’’…’’’ 的格式表示多行内容">
+<meta property="og:description" content="Python 优点    开发效率高，强大的库Python 缺点    运行速度慢，代码不能加密 用 exit() 或 ctrl+d 退出 python 交互模式 在 xx.py 首行加上 #!/usr/bin/env python3 并加上执行权限可直接运行 xx.py 文件python 允许用 r’’ 表示 ‘’ 内部的字符串默认不转义，允许用 ‘’’…’’’ 的格式表示多行内容 print">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-04T09:54:41.673Z">
+<meta property="og:updated_time" content="2018-03-09T03:55:39.829Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python3 学习">
-<meta name="twitter:description" content="Python 优点    开发效率高，强大的库Python 缺点    运行速度慢，代码不能加密 用 exit() 或 ctrl+d 退出 python 交互模式 在 xx.py 首行加上 #!/usr/bin/env python3 并加上执行权限可直接运行 xx.py 文件 python 允许用 r’’ 表示 ‘’ 内部的字符串默认不转义，允许用 ‘’’…’’’ 的格式表示多行内容">
+<meta name="twitter:description" content="Python 优点    开发效率高，强大的库Python 缺点    运行速度慢，代码不能加密 用 exit() 或 ctrl+d 退出 python 交互模式 在 xx.py 首行加上 #!/usr/bin/env python3 并加上执行权限可直接运行 xx.py 文件python 允许用 r’’ 表示 ‘’ 内部的字符串默认不转义，允许用 ‘’’…’’’ 的格式表示多行内容 print">
 
 
 
@@ -323,8 +323,23 @@
       
         <p>Python 优点<br>    开发效率高，强大的库<br>Python 缺点<br>    运行速度慢，代码不能加密</p>
 <p>用 exit() 或 ctrl+d 退出 python 交互模式</p>
-<p>在 xx.py 首行加上 #!/usr/bin/env python3 并加上执行权限可直接运行 xx.py 文件</p>
-<p>python 允许用 r’’ 表示 ‘’ 内部的字符串默认不转义，允许用 ‘’’…’’’ 的格式表示多行内容</p>
+<p>在 xx.py 首行加上 <code>#!/usr/bin/env python3</code> 并加上执行权限可直接运行 xx.py 文件<br>python 允许用 r’’ 表示 ‘’ 内部的字符串默认不转义，允许用 ‘’’…’’’ 的格式表示多行内容</p>
+<p>print 函数会触发一个换行操作</p>
+<p>int 函数丢弃小数部分转换成整数，<code>round(n,r)</code> 函数四舍五入保留小数点后 r 位</p>
+<p>当数字 n 是两个相邻整数的中间值（例如 1.5、2.5) 时，<code>round(n)</code> 返回其最为接近的偶数</p>
+<p>Python 中可以使用整除运算符 <code>//</code></p>
+<p>Python 通过垃圾回收进程将孤立的数值从内存中移除</p>
+<p>在 IDLE 编辑器中，按下 Alt+3 和 Alt+4 键可以注释或不注释选注的代码段</p>
+<p>Python 不允许字符串中单个字符的索引越界，但是在切片中可以允许索引越界</p>
+<p>print(dir(str)) 会显示所有的字符串方法</p>
+<p>print 有两个可选参数 seq 和 end</p>
+<p>列表是可变对象，数值、字符串和元组是不可变对象</p>
+<p>list 函数可以将元组或字符串转换为列表</p>
+<p>tuple 函数可以将列表或字符串转化为元组</p>
+<p>sort 没有返回值，list = list.sort() 是无效语句</p>
+<p>在函数定义中，没有默认值的参数必须放在有默认值的参数前面</p>
+<p>按位置传递的实际参数必须放在按关键字传递的实际参数前面</p>
+<p>149</p>
 
       
     </div>
@@ -349,8 +364,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/10/linux/apache/" rel="next" title="httpd文件名乱码">
-                <i class="fa fa-chevron-left"></i> httpd文件名乱码
+              <a href="/2018/03/04/linux/sqlserver/" rel="next" title="在 ubuntu 上安装 sql-server">
+                <i class="fa fa-chevron-left"></i> 在 ubuntu 上安装 sql-server
               </a>
             
           </div>
@@ -433,7 +448,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-count">23</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

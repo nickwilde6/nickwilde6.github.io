@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="自用">
+<meta name="description" content="安装 SQL Server 导入公共存储库 GPG 密钥： 1wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -  注册 Microsoft SQL Server Ubuntu 存储库： 1sudo add-apt-repository &quot;$(wget -qO- https://packa">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux命令">
-<meta property="og:url" content="http://zzrun.top/2017/11/07/linux/mingling/index.html">
+<meta property="og:title" content="在 ubuntu 上安装 sql-server">
+<meta property="og:url" content="http://zzrun.top/2018/03/04/linux/sqlserver/index.html">
 <meta property="og:site_name" content="ZZRun">
-<meta property="og:description" content="自用">
+<meta property="og:description" content="安装 SQL Server 导入公共存储库 GPG 密钥： 1wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -  注册 Microsoft SQL Server Ubuntu 存储库： 1sudo add-apt-repository &quot;$(wget -qO- https://packa">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-09T12:12:15.470Z">
+<meta property="og:updated_time" content="2018-03-05T02:51:05.921Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux命令">
-<meta name="twitter:description" content="自用">
+<meta name="twitter:title" content="在 ubuntu 上安装 sql-server">
+<meta name="twitter:description" content="安装 SQL Server 导入公共存储库 GPG 密钥： 1wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -  注册 Microsoft SQL Server Ubuntu 存储库： 1sudo add-apt-repository &quot;$(wget -qO- https://packa">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://zzrun.top/2017/11/07/linux/mingling/"/>
+  <link rel="canonical" href="http://zzrun.top/2018/03/04/linux/sqlserver/"/>
 
 
 
 
 
-  <title>Linux命令 | ZZRun</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>在 ubuntu 上安装 sql-server | ZZRun</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zzrun.top/2017/11/07/linux/mingling/">
+    <link itemprop="mainEntityOfPage" href="http://zzrun.top/2018/03/04/linux/sqlserver/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zz">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux命令</h1>
+          <h1 class="post-title" itemprop="name headline">在 ubuntu 上安装 sql-server</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-07T22:58:00+08:00">
-                2017-11-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-04T00:00:00+08:00">
+                2018-03-04
               </time>
             
 
@@ -321,8 +321,48 @@
       
 
       
-        <p><font color="9933ff">自用</font><br><a id="more"></a></p>
-<h2 id="A"><a href="#A" class="headerlink" title="A"></a>A</h2><h2 id="B"><a href="#B" class="headerlink" title="B"></a>B</h2><h2 id="C"><a href="#C" class="headerlink" title="C"></a>C</h2><h2 id="D"><a href="#D" class="headerlink" title="D"></a>D</h2><h2 id="E"><a href="#E" class="headerlink" title="E"></a>E</h2><h2 id="F"><a href="#F" class="headerlink" title="F"></a>F</h2><h2 id="G"><a href="#G" class="headerlink" title="G"></a>G</h2><h2 id="H"><a href="#H" class="headerlink" title="H"></a>H</h2><h2 id="I"><a href="#I" class="headerlink" title="I"></a>I</h2><h2 id="J"><a href="#J" class="headerlink" title="J"></a>J</h2><h2 id="K"><a href="#K" class="headerlink" title="K"></a>K</h2><h2 id="L"><a href="#L" class="headerlink" title="L"></a>L</h2><h2 id="M"><a href="#M" class="headerlink" title="M"></a>M</h2><h2 id="N"><a href="#N" class="headerlink" title="N"></a>N</h2><h2 id="O"><a href="#O" class="headerlink" title="O"></a>O</h2><h2 id="P"><a href="#P" class="headerlink" title="P"></a>P</h2><h2 id="Q"><a href="#Q" class="headerlink" title="Q"></a>Q</h2><h2 id="R"><a href="#R" class="headerlink" title="R"></a>R</h2><h2 id="S"><a href="#S" class="headerlink" title="S"></a>S</h2><h2 id="T"><a href="#T" class="headerlink" title="T"></a>T</h2><h2 id="U"><a href="#U" class="headerlink" title="U"></a>U</h2><h2 id="V"><a href="#V" class="headerlink" title="V"></a>V</h2><h2 id="W"><a href="#W" class="headerlink" title="W"></a>W</h2><h2 id="X"><a href="#X" class="headerlink" title="X"></a>X</h2><h2 id="Y"><a href="#Y" class="headerlink" title="Y"></a>Y</h2><h2 id="Z"><a href="#Z" class="headerlink" title="Z"></a>Z</h2>
+        <h1 id="安装-SQL-Server"><a href="#安装-SQL-Server" class="headerlink" title="安装 SQL Server"></a>安装 SQL Server</h1><ol>
+<li><p>导入公共存储库 GPG 密钥：</p>
+<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -</div></pre></td></tr></table></figure>
+</li>
+<li><p>注册 Microsoft SQL Server Ubuntu 存储库：</p>
+<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository <span class="string">"<span class="variable">$(wget -qO- https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2017.list)</span>"</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>安装 SQL Server：</p>
+<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install -y mssql-server</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装</p>
+<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo /opt/mssql/bin/mssql-conf setup</div></pre></td></tr></table></figure>
+</li>
+<li><p>验证服务是否开启：</p>
+<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">systemctl status mssql-server</div></pre></td></tr></table></figure>
+</li>
+<li><p>远程连接需打开防火墙上的 SQL Server TCP 端口 1433</p>
+</li>
+</ol>
+<h1 id="安装-SQL-Server-命令行工具"><a href="#安装-SQL-Server-命令行工具" class="headerlink" title="安装 SQL Server 命令行工具"></a>安装 SQL Server 命令行工具</h1><ol>
+<li><p>导入公共存储库 GPG 密钥：</p>
+<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -</div></pre></td></tr></table></figure>
+</li>
+<li><p>注册 Microsoft Ubuntu 存储库：</p>
+<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository <span class="string">"<span class="variable">$(wget -qO- https://packages.microsoft.com/config/ubuntu/16.04/prod.list)</span>"</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>更新源列表，运行 unixODBC 开发人员包的安装命令：</p>
+<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install -y mssql-tools unixodbc-dev</div></pre></td></tr></table></figure>
+</li>
+<li><p>添加到环境变量</p>
+<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="string">'export PATH="$PATH:/opt/mssql-tools/bin"'</span> &gt;&gt; ~/.bash_profile</div><div class="line"><span class="built_in">echo</span> <span class="string">'export PATH="$PATH:/opt/mssql-tools/bin"'</span> &gt;&gt; ~/.bashrc</div><div class="line"><span class="built_in">source</span> ~/.bashrc</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="本地连接"><a href="#本地连接" class="headerlink" title="本地连接"></a>本地连接</h1><ol>
+<li><p>登录，用户名为 SA</p>
+<figure class="highlight zsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sqlcmd -S localhost -U SA</div></pre></td></tr></table></figure>
+</li>
+<li><p>登录成功则显示 <code>1&gt;</code></p>
+</li>
+<li>若登录失败可查看 <a href="https://docs.microsoft.com/zh-cn/sql/linux/sql-server-linux-troubleshooting-guide#connection" target="_blank" rel="external">连接故障排除建议</a></li>
+</ol>
+
       
     </div>
     
@@ -346,8 +386,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/11/05/linux/vbird/" rel="next" title="鸟哥的Linux私房菜">
-                <i class="fa fa-chevron-left"></i> 鸟哥的Linux私房菜
+              <a href="/2018/01/10/linux/apache/" rel="next" title="httpd文件名乱码">
+                <i class="fa fa-chevron-left"></i> httpd文件名乱码
               </a>
             
           </div>
@@ -356,8 +396,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/11/15/wenxue/linzhonglu/" rel="prev" title="林中路">
-                林中路 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/04/linux/python/" rel="prev" title="Python3 学习">
+                Python3 学习 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -528,7 +568,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#A"><span class="nav-number">1.</span> <span class="nav-text">A</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#B"><span class="nav-number">2.</span> <span class="nav-text">B</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C"><span class="nav-number">3.</span> <span class="nav-text">C</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#D"><span class="nav-number">4.</span> <span class="nav-text">D</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#E"><span class="nav-number">5.</span> <span class="nav-text">E</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#F"><span class="nav-number">6.</span> <span class="nav-text">F</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#G"><span class="nav-number">7.</span> <span class="nav-text">G</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#H"><span class="nav-number">8.</span> <span class="nav-text">H</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#I"><span class="nav-number">9.</span> <span class="nav-text">I</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#J"><span class="nav-number">10.</span> <span class="nav-text">J</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#K"><span class="nav-number">11.</span> <span class="nav-text">K</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L"><span class="nav-number">12.</span> <span class="nav-text">L</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#M"><span class="nav-number">13.</span> <span class="nav-text">M</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#N"><span class="nav-number">14.</span> <span class="nav-text">N</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#O"><span class="nav-number">15.</span> <span class="nav-text">O</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#P"><span class="nav-number">16.</span> <span class="nav-text">P</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q"><span class="nav-number">17.</span> <span class="nav-text">Q</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#R"><span class="nav-number">18.</span> <span class="nav-text">R</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#S"><span class="nav-number">19.</span> <span class="nav-text">S</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#T"><span class="nav-number">20.</span> <span class="nav-text">T</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#U"><span class="nav-number">21.</span> <span class="nav-text">U</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#V"><span class="nav-number">22.</span> <span class="nav-text">V</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#W"><span class="nav-number">23.</span> <span class="nav-text">W</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#X"><span class="nav-number">24.</span> <span class="nav-text">X</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Y"><span class="nav-number">25.</span> <span class="nav-text">Y</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Z"><span class="nav-number">26.</span> <span class="nav-text">Z</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-SQL-Server"><span class="nav-number">1.</span> <span class="nav-text">安装 SQL Server</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-SQL-Server-命令行工具"><span class="nav-number">2.</span> <span class="nav-text">安装 SQL Server 命令行工具</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#本地连接"><span class="nav-number">3.</span> <span class="nav-text">本地连接</span></a></li></ol></div>
             
 
           </div>
